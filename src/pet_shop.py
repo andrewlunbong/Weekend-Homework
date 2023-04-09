@@ -1,8 +1,6 @@
-#1 
-# def get_pet_shop_name(pet_shop):
-#     print(pet_shop["name"])
-#     return pet_shop["name"]
-
+# 1 
+def get_pet_shop_name(pet_shop):
+    return pet_shop["name"]
 
 #2
 def get_total_cash(pet_shop):
@@ -43,25 +41,21 @@ def add_pet_to_stock(pet_shop, new_pet):
 #11
 
 def get_customer_cash(customer_cash):
-    return customer_cash["cash"][0]
+    return customer_cash["cash"]
 
 #12 
 
 def remove_customer_cash(customer_cash, amount):
-    customer_cash["cash"][0] += amount 
+    customer_cash["cash"] -= amount 
 
 #13
 
 def get_customer_pet_count(customer_index):
     return len(customer_index["pets"])
 
-    # return count["customer"]["pets"]
 
-# def add_pet_to_customer(pet_shop, new_pet):
+#14
+def add_pet_to_customer(customer, new_pet):
+    customer["pets"].append(new_pet)
 
-    given_para = {
-                "name": "Alice",
-                "pets": [],
-                "cash": 1000
-            },
 
